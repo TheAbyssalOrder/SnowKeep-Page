@@ -227,7 +227,7 @@
   <main>
     <section class="hero">
       <h2>Privacy Policy</h2>
-      <p class="updated">Last updated: August 15, 2026</p>
+      <p class="updated">Last updated: August 29, 2026</p>
       <p class="summary">
         SnowKeep is a private, self-hosted application built for one household's
         personal use. It is not a commercial product, has no public sign-up, and
@@ -282,6 +282,11 @@
           <td>Household and personal task tracking</td>
         </tr>
         <tr>
+          <td>Email</td>
+          <td>Email messages and account credentials for a connected mail account</td>
+          <td>To provide an email client within the app</td>
+        </tr>
+        <tr>
           <td>Home automation</td>
           <td>Light/switch states via the connected Home Assistant instance</td>
           <td>Smart home control from within the app</td>
@@ -328,7 +333,7 @@
         <li>All data is stored on infrastructure owned and operated by the developer — no third-party cloud database or storage provider is used for app data.</li>
         <li>Bank credentials are never stored by SnowKeep at any point — only Plaid ever sees them.</li>
         <li>Account access is scoped per user — the caregiver's account can only see and act on the specific modules and data explicitly granted to it.</li>
-        <li>Encryption of sensitive data at rest (credentials, documents) on the device itself is an active area of ongoing development.</li>
+        <li>Sensitive data is end-to-end encrypted at rest using per-user encryption keys generated and stored only on-device; the server never has access to the decryption keys or plaintext. An optional on-device App Lock (PIN/biometric) can further restrict access to the app itself.</li>
       </ul>
     </section>
 
